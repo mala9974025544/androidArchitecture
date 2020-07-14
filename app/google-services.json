@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "136667440232",
+    "firebase_url": "https://architecture-e7b02.firebaseio.com",
+    "project_id": "architecture-e7b02",
+    "storage_bucket": "architecture-e7b02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136667440232:android:368215fd6f3d1cc3a587dd",
+        "android_client_info": {
+          "package_name": "com.precticle.androidarchitecture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136667440232-d6j53nrvis1ctmdntcva3tneamgls4nr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAigO48NsHOcCvASjlevMPt6pwKUzJWx4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136667440232-d6j53nrvis1ctmdntcva3tneamgls4nr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

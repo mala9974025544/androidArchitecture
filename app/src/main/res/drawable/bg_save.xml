@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+
+	<solid android:color="@color/colorAccent" />
+	<size
+		android:width="@dimen/size_50dp"
+		android:height="@dimen/size_25dp" />
+	<corners
+		android:bottomLeftRadius="@dimen/size_35dp"
+		android:topLeftRadius="@dimen/size_35dp" />
+</shape>
+
+<!--if want to change save BG color to drk grey-->
+<!--
+<solid android:color="?attr/ContactSave" />-->
