@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -40,6 +41,7 @@ class MainActivity : BaseActivity(), ConfiemDialog.DialogToFragment {
         setContentView(R.layout.activity_main)
         //  AutoStartPermissionHelper.getInstance().getAutoStartPermission(this);
         registerBroadCast()
+
         setupViewModel()
         setupUI()
         setupObservers()
@@ -48,7 +50,6 @@ class MainActivity : BaseActivity(), ConfiemDialog.DialogToFragment {
         // navigateToActivity();
          //navigateToDiaog()
         /*launch(Dispatchers.IO) {
-
             withContext(Dispatchers.Main){
 
             }
@@ -127,6 +128,7 @@ class MainActivity : BaseActivity(), ConfiemDialog.DialogToFragment {
                         progressBar.visibility = View.VISIBLE
                         recyclerView.visibility = View.GONE
                     }
+
                 }
             }
         })

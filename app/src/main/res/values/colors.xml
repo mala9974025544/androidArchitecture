@@ -7,4 +7,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorSemiWhite">#40FFFFFF</color>
     <color name="colorWhitelight">#80FFFFFF</color>
+    <color name="grey">#5b5b5b</color>
+    <color name="lbl_secondary">#8d8d8d</color>
+    <color name="gradient_2">#3e3e3e</color>
 </resources>

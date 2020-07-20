@@ -5,7 +5,12 @@
     <string name="txt_delete_activity">Are you sure you want to delete this %1$s Activity?</string>
     <string name="delete_activity">Delete Activity</string>
     <string name="txt_cancel">Cancel</string>
-
+    <string name="msg_preparing_order">Preparing your order</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="btn_check_order">CHECK ORDERS</string>
+    <string name="error">Error</string>
+    <string name="msg_unknown">Unknown error occurred! Please try again. Check Android Studio\'s LogCat for detailed error report.</string>
+    <string name="title_preparing_order">Preparing Order</string>
 
 
     <!--txt-->
