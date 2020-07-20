@@ -24,7 +24,7 @@ import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.iid.FirebaseInstanceId
-import com.precticle.androidarchitecture.utils.LogUtils
+
 import java.io.File
 import java.io.IOException
 import java.text.Format
@@ -252,7 +252,7 @@ object Utils{
 
                 // 4
                 val msg = token
-                LogUtils.d("tag",msg.toString())
+
                 Toast.makeText(context, msg, Toast.LENGTH_LONG).show()
             })
 

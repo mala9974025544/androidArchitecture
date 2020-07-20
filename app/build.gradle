@@ -21,6 +21,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "UPLOAD_PATH_PROFILE", "\"d/profile/pf\""
+        }
     }
 }
 

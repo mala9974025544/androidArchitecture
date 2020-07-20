@@ -5,13 +5,7 @@ import android.util.Log
 import com.precticle.androidarchitecture.BuildConfig
 
 
-/**
- * This class is used to restrict logging in release build.
- */
-
-object LogUtils {
-
-    fun d(tag: String, message: String) {
+fun d(tag: String, message: String) {
         if (BuildConfig.DEBUG || !CoreConstants.IS_RELEASE) {
             Log.d(tag, message)
         }
@@ -41,4 +35,4 @@ object LogUtils {
             Log.w(tag, message)
         }
     }
-}
+
