@@ -1,6 +1,7 @@
 package com.precticle.androidarchitecture.paytm
 
 import android.os.Parcelable
+import com.precticle.androidarchitecture.paytm.networking.model.Product
 import kotlinx.android.parcel.Parcelize
 import java.util.*
 

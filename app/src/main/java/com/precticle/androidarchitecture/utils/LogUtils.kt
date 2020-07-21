@@ -4,6 +4,7 @@ import android.text.TextUtils
 import android.util.Log
 import com.precticle.androidarchitecture.BuildConfig
 
+/*
 
 fun d(tag: String, message: String) {
         if (BuildConfig.DEBUG || !CoreConstants.IS_RELEASE) {
@@ -35,4 +36,5 @@ fun d(tag: String, message: String) {
             Log.w(tag, message)
         }
     }
+*/
 

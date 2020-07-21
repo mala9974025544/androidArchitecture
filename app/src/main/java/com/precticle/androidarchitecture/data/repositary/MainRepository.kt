@@ -6,5 +6,5 @@ class MainRepository(private val apiHelper: ApiHelper) {
 
     suspend fun getUsers() = apiHelper.getUsers()
 
-    suspend fun prepareOrder()=apiHelper.prepareOrder()
+
 }

@@ -1,4 +1,4 @@
-package com.precticle.androidarchitecture.paytm
+package com.precticle.androidarchitecture.paytm.networking.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

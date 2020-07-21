@@ -41,7 +41,6 @@ class MainActivity : BaseActivity(), ConfiemDialog.DialogToFragment {
         setContentView(R.layout.activity_main)
         //  AutoStartPermissionHelper.getInstance().getAutoStartPermission(this);
         registerBroadCast()
-
         setupViewModel()
         setupUI()
         setupObservers()

@@ -11,6 +11,7 @@
     <string name="error">Error</string>
     <string name="msg_unknown">Unknown error occurred! Please try again. Check Android Studio\'s LogCat for detailed error report.</string>
     <string name="title_preparing_order">Preparing Order</string>
+    <string name="msg_fetching_checksum">Getting checksum value from the server</string>
 
 
     <!--txt-->

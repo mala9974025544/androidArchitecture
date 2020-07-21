@@ -26,6 +26,7 @@ class UserDataSource : PageKeyedDataSource<Int, User?>() {
     ) {
         //val service = ApiServiceBuilder.buildService(ApiService::class.java)
         val call = ServiceClassWithPaging.apiService.getUsers(FIRST_PAGE)
+
         call.enqueue(object : Callback<UserResponse> {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 if (response.isSuccessful) {

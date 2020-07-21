@@ -36,7 +36,6 @@
             android:textColor="@color/grey"
             android:textSize="@dimen/size_16dp" />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/layout_order_placed"
         android:layout_width="wrap_content"
