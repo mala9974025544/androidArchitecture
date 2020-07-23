@@ -1,6 +1,8 @@
 package com.precticle.androidarchitecture.data.api
 
 import com.precticle.androidarchitecture.data.model.User
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderRequest
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET

@@ -1,16 +1,15 @@
 package com.precticle.androidarchitecture.view.view.activities
 
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProviders
-import com.google.android.gms.common.util.SharedPreferencesUtils
 import com.precticle.androidarchitecture.BuildConfig
 import com.precticle.androidarchitecture.R
 import com.precticle.androidarchitecture.data.api.ApiHelper
 import com.precticle.androidarchitecture.data.api.ServiceClass
 import com.precticle.androidarchitecture.paytm.CartItem
 import com.precticle.androidarchitecture.paytm.User
+
 import com.precticle.androidarchitecture.paytm.networking.ApiClient
 import com.precticle.androidarchitecture.paytm.networking.ApiService
 import com.precticle.androidarchitecture.paytm.networking.model.*
@@ -48,10 +47,14 @@ class PaytmActivity : BaseActivity() {
         user.name = "mala"
         user.email = "rupareliya.mala@gmail.com"
 
+        login()
+
     }
     fun getApi(): ApiClient? {
+
         if (mApi == null) {
-            mApi = ApiService.getClient(this).create(ApiClient::class.java)
+            mApi=ApiService.client?.create(ApiClient::class.java)
+
         }
         return mApi
     }
@@ -60,10 +63,10 @@ class PaytmActivity : BaseActivity() {
         request.email = "mala.rupareliya@gmail.com"
         request.password = "Mom@7600303295"
 
-        getApi().login(request).enqueue(object : Callback<User> {
+        getApi()!!.login(request).enqueue(object : Callback<User?> {
             override fun onResponse(
-                call: Call<User>,
-                response: Response<User>
+                call: Call<User?>,
+                response: Response<User?>
             ) {
                 loader.visibility = View.INVISIBLE
                 if (!response.isSuccessful) {
@@ -72,10 +75,10 @@ class PaytmActivity : BaseActivity() {
                 }
 
                 SharedPrefrence.saveAuthToken(response.body()!!.token,this@PaytmActivity)
-                
+
             }
 
-            override fun onFailure(call: Call<User>, t: Throwable) {
+            override fun onFailure(call: Call<User?>, t: Throwable) {
                 loader.visibility = View.INVISIBLE
                 handleError(t)
             }
@@ -84,7 +87,7 @@ class PaytmActivity : BaseActivity() {
 
     private fun setUpObservers(request: PrepareOrderRequest) {
 
-        getApi().prepareOrder(request).enqueue(object : Callback<PrepareOrderResponse?> {
+        getApi()!!.prepareOrder(request).enqueue(object : Callback<PrepareOrderResponse?> {
             override fun onResponse(
                 call: Call<PrepareOrderResponse?>,
                 response: Response<PrepareOrderResponse?>

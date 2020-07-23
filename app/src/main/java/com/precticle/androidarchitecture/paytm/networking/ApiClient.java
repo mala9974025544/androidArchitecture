@@ -1,6 +1,7 @@
 package com.precticle.androidarchitecture.paytm.networking;
 
-import com.precticle.androidarchitecture.data.model.User;
+
+import com.precticle.androidarchitecture.paytm.User;
 import com.precticle.androidarchitecture.paytm.networking.model.AppConfig;
 import com.precticle.androidarchitecture.paytm.networking.model.ChecksumResponse;
 import com.precticle.androidarchitecture.paytm.networking.model.LoginRequest;

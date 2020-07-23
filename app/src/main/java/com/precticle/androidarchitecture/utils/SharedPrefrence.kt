@@ -15,12 +15,7 @@ object SharedPrefrence {
     private fun getSharedPref(context: Context): SharedPreferences? {
         return context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE)
     }
-    fun getInstance(): SharedPrefrence {
-        if (singleTonInstance == null) {
-            singleTonInstance = SharedPrefrence(MyApplication.instance!!.getApplicationContext())
-        }
-        return singleTonInstance
-    }
+
     //set title
     fun setTitle(context : Context,title : String){
         val sharedPref = getSharedPref(context)

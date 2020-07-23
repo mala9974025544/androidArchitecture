@@ -64,7 +64,7 @@ open class BaseActivity() : AppCompatActivity(), CoroutineScope{
             .commitAllowingStateLoss()
     }
     open fun showProgress() {
-        progressBar.setVisibility(View.VISIBLE)
+        progress_bar.setVisibility(View.VISIBLE)
     }
 
     open fun toggleProgress(isLoading: Boolean) {
@@ -72,7 +72,7 @@ open class BaseActivity() : AppCompatActivity(), CoroutineScope{
     }
 
     open fun hideProgress() {
-        progressBar.setVisibility(View.GONE)
+        progress_bar.setVisibility(View.GONE)
     }
 
     open fun handleError(throwable: Throwable?) {

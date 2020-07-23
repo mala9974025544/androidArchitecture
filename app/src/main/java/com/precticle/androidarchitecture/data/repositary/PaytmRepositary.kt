@@ -3,6 +3,8 @@ package com.precticle.androidarchitecture.data.repositary
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.precticle.androidarchitecture.data.api.ApiHelper
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderRequest
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

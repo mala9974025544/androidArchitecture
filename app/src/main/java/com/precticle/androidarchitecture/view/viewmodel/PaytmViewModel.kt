@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.precticle.androidarchitecture.data.api.ApiHelper
 import com.precticle.androidarchitecture.data.repositary.PaytmRepositary
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderRequest
+import com.precticle.androidarchitecture.paytm.networking.model.PrepareOrderResponse
 
 
 class PaytmViewModel(var paytmRepositary: PaytmRepositary) :ViewModel(){
